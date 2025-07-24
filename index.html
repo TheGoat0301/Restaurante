@@ -665,13 +665,14 @@
                 conta!
               </p>
 
-              <form class="cta-formatacao" action="#">
+              <form class="cta-formatacao" name="se-inscreva" netlify>
                 <div>
                   <label for="nome-completo">Nome Completo</label>
                   <input
                     id="nome-completo"
                     type="text"
                     placeholder="Seu nome"
+                    name="nome-completo"
                     required
                   />
                 </div>
@@ -682,13 +683,14 @@
                     id="email"
                     type="email"
                     placeholder="Seu email"
+                    name="email"
                     required
                   />
                 </div>
 
                 <div>
                   <label for="onde-nos-viu">De onde você nos conheceu?</label>
-                  <select id="onde-nos-viu" required>
+                  <select id="onde-nos-viu" name="onde-nos-viu" required>
                     <option value="">Por favor, escolha uma opção</option>
                     <option value="amigos">Amigos e Família</option>
                     <option value="youtube">YouTube</option>
