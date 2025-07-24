@@ -548,22 +548,22 @@
   background-position: center;
 }
 
-.cta-formatacao {
+.cta-formulario {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
 }
 
-.cta-formatacao label {
+.cta-formulario label {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
 }
 
-.cta-formatacao input,
-.cta-formatacao select {
+.cta-formulario input,
+.cta-formulario select {
   width: 100%;
   padding: 1.2rem;
   font-size: 1.8rem;
@@ -575,12 +575,12 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.cta-formatacao input:focus,
-.cta-formatacao select:focus {
+.cta-formaulario input:focus,
+.cta-formulario select:focus {
   box-shadow: 0 0 0 0.8rem #45260a;
 }
 
-.cta-formatacao input::placeholder {
+.cta-formulario input::placeholder {
   color: #aaa;
 }
 
