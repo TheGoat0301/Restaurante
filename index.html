@@ -665,7 +665,20 @@
                 conta!
               </p>
 
-              <form class="cta-formatacao" name="se-inscreva" netlify>
+              <form
+                class="cta-formatacao"
+                name="se-inscreva"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+              >
+                <input type="hidden" name="form-name" value="se-inscreva" />
+                <p hidden>
+                  <label
+                    >Não preencha se for humano: <input name="bot-field"
+                  /></label>
+                </p>
+
                 <div>
                   <label for="nome-completo">Nome Completo</label>
                   <input
