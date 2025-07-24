@@ -165,6 +165,12 @@
 /*SECAO DIVULGADOS */
 /*******************************/
 
+.divulgados-container {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
 .secao-divulgados {
   padding: 4.8rem 0 3.2rem 0;
 }
