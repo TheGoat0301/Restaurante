@@ -1,0 +1,400 @@
+/*******************************/
+/*1344PX PEQUENOS COMPUTADORES*/
+/*******************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .cabecalho-primario {
+    font-size: 4.2rem;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*******************************/
+/*1200PX TABLETS GRANDES*/
+/*******************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 1.2rem;
+  }
+
+  .logos img {
+    height: 7rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .cabecalho-secundario {
+    font-size: 3.6rem;
+  }
+
+  .cabecalho-terciario {
+    font-size: 2.2rem;
+  }
+
+  .cabecalho-conteudo {
+    padding: 0 3.2rem;
+  }
+
+  .nav-principal-lista {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .depoimento-recipiente {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .logos img {
+    height: 7rem;
+  }
+}
+
+/*******************************/
+/*930PX TABLETS*/
+/*******************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .cabecalho--conteudo {
+    max-width: 135.2rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-caixa-texto,
+  .hero-caixa-img {
+    text-align: center;
+  }
+
+  .logos img {
+    height: 5rem;
+  }
+
+  .logos {
+    column-gap: 4rem;
+  }
+
+  .refeicoes-entregues {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .passo-numero {
+    font-size: 7.4rem;
+  }
+
+  .refeicao-conteudo {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .secao-depoimentos {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-formatacao {
+    grid-template-columns: 1fr;
+  }
+
+  .bto--formulario {
+    margin-top: 1.2rem;
+  }
+
+  /* NAVEGACÃO MOBILE */
+  .bto--mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+
+  .nav-principal {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-aberto .nav-principal {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-aberto .icone-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-aberto .icone-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-principal-lista {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .footer-link.focus--zap span:nth-of-type(1) {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .footer-link.focus--zap span:nth-of-type(2) {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .nav-principal-link:link,
+  .nav-principal-link:visited {
+    font-size: 3rem;
+  }
+
+  .plano-preco {
+    font-size: 5rem;
+  }
+
+  .planos-precos--premium::after {
+    top: 5%;
+    right: -22%;
+  }
+
+  .galeria {
+    gap: 0.6rem;
+  }
+}
+
+/*******************************/
+/*700PX TABLETS MENORES*/
+/*******************************/
+
+@media (max-width: 44em) {
+  .grid--3-colunas,
+  .grid--4-colunas {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logos img {
+    height: 4rem;
+  }
+
+  .logos {
+    column-gap: 3rem;
+  }
+
+  .dietas {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .cabecalho-secundario {
+    margin-bottom: 4.8rem;
+  }
+
+  .planos-precos {
+    width: 100%;
+  }
+
+  .plano-preco {
+    font-size: 4rem;
+  }
+
+  .planos-precos--premium::after {
+    top: 5%;
+    right: -25%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-coluna,
+  .endereco-coluna {
+    grid-column: span 3;
+  }
+
+  .nav-coluna {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/*******************************/
+/*550PX CELULARES*/
+/*******************************/
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-colunas,
+  .grid--3-colunas,
+  .grid--4-colunas {
+    grid-template-columns: 1fr;
+  }
+
+  .bto,
+  .bto:link,
+  .bto:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .cabecalho-secundario {
+    font-size: 2.4rem;
+  }
+
+  .secao-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 3.8rem;
+  }
+
+  .logos {
+    column-gap: 2rem;
+  }
+
+  .caixa-img-reserva:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .caixa-img-reserva:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .caixa-img-reserva {
+    transform: translateY(2.4rem);
+  }
+
+  .planos-precos--premium::after {
+    top: 10%;
+    right: -10%;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: 1.6rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-caixa-de-img {
+    height: 40rem;
+    grid-row: 1;
+  }
+
+  .cta-caixa-de-texto {
+    padding: 3.2rem;
+  }
+}
+
+/*******************************/
+/*CORRIGE O SAFARI FLEXBOX GAP*/
+/*******************************/
+
+.sem-flexbox-gap .nav-principal-lista li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.sem-flexbox-gap .lista-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.sem-flexbox-gap .icone-lista:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.sem-flexbox-gap .refeicoes-entreguess {
+  margin-right: 1.6rem;
+}
+
+.sem-flexbox-gap .refeicao-atributo:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.sem-flexbox-gap .refeicao-icone {
+  margin-right: 1.6rem;
+}
+
+.sem-flexbox-gap .grid--footer div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.sem-flexbox-gap .links-sociais li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.sem-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .sem-flexbox-gap .nav-principal-lista li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .sem-flexbox-gap .nav-principal-lista li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}

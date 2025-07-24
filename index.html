@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omnifood &mdash; Nunca cozinhe novamente!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Omnifood é uma assinatura alimentícia gerada por IA que vai te fazer saudável de novo, todos os 365 dias do ano. É adaptado ao seus gostos e necessidades nutricionais"
+    />
+    <link rel="icon" href="img/icone-64-browser.png" />
+    <link rel="apple-touch-icon" href="img/icone-180-apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/geral.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <a class="logo" href="#">
+        <img class="logo" alt="Omnifood Logo" src="img/omnifood-logo.png"
+      /></a>
+      <nav class="nav-principal">
+        <ul class="nav-principal-lista">
+          <li>
+            <a class="nav-principal-link" href="#como">como funciona</a>
+          </li>
+          <li>
+            <a class="nav-principal-link" href="#refeicao">refeições</a>
+          </li>
+          <li>
+            <a class="nav-principal-link" href="#depoimentos">depoimentos</a>
+          </li>
+          <li><a class="nav-principal-link" href="#precos">preços</a></li>
+          <li>
+            <a class="nav-principal-link nav-msm" href="#cta">
+              Experimente de graça</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="bto--mobile-nav">
+        <ion-icon class="icone-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icone-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="secao-hero">
+        <div class="hero">
+          <div class="hero-caixa-texto">
+            <h1 class="cabecalho-primario">
+              Uma refeição saudável entregue na sua porta, todos os dias
+            </h1>
+            <p class="hero-descricao">
+              A assinatura inteligente de alimentação durante os 365 dias do ano
+              que fará você voltar a comer de forma saudável. Personalizada de
+              acordo com seus gostos e necessidades nutricionais.
+            </p>
+            <a href="#precos" class="bto bto--cheio margin-right-pequeno"
+              >Comece a comer bem</a
+            >
+            <a href="#como" class="bto bto--fora">Veja mais &darr;</a>
+            <div class="refeicoes-entregues">
+              <div class="rostos-clientes-img">
+                <img src="img/clientes/cliente-1.jpg" alt="foto de cliente" />
+                <img src="img/clientes/cliente-2.jpg" alt="foto de cliente" />
+                <img src="img/clientes/cliente-3.jpg" alt="foto de cliente" />
+                <img src="img/clientes/cliente-4.jpg" alt="foto de cliente" />
+                <img src="img/clientes/cliente-5.jpg" alt="foto de cliente" />
+                <img src="img/clientes/cliente-6.jpg" alt="foto de cliente" />
+              </div>
+              <p class="texto-clientes">
+                <span>250.000+</span> refeições entregues ano passado!
+              </p>
+            </div>
+          </div>
+          <div class="hero-caixa-img">
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero.png" type="image/png" />
+
+              <img
+                src="img/hero.png"
+                class="hero-img"
+                alt="mulher comendo comida bonita e saudável, duas formas com comida numa mesa e 3 tijelas com comida também em uma mesa, todas saudáveis e bonitas"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="secao-divulgados">
+        <div class="container">
+          <h2 class="cabecalho-divulgacoes">Onde já aparecemos:</h2>
+          <div class="logos">
+            <img src="img/logos/canaltech.png" alt="logo da Canaltech" />
+            <img src="img/logos/infomoney.png" alt="logo da Infomoney" />
+            <img
+              class="sed"
+              src="img/logos/folhadesp.png"
+              alt="logo da Folha de SP"
+            />
+            <img src="img/logos/forbes.png" alt="logo da Forbes Brasil" />
+            <img src="img/logos/cnn.png" alt="logo da CNN" />
+            <img src="img/logos/uol.png" alt="logo da UOL" />
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-como" id="como">
+        <div class="container">
+          <span class="subtitulo"> Como Funciona </span>
+          <h2 class="cabecalho-secundario">
+            Sua dose diária de saúde em 3 passos simples
+          </h2>
+        </div>
+        <div class="container grid grid--2-colunas grid--centrar-verticalmente">
+          <!-- PASSO N1 -->
+
+          <div class="caixa-de-texto-reserva">
+            <p class="passo-numero">01</p>
+            <h3 class="cabecalho-terciario">
+              Conte-nos o que você gosta (e o que não gosta)
+            </h3>
+            <p class="descricao-reserva">
+              Nunca mais perca tempo pensando no que comer! A IA da Omnifood
+              criará um plano alimentar semanal 100% personalizado para você.
+              Ela garante que você receba todos os nutrientes e vitaminas de que
+              precisa, não importa qual dieta você siga!
+            </p>
+          </div>
+          <div class="caixa-img-reserva">
+            <img
+              src="img/app/tela-do-app-1.png"
+              class="reserva-img"
+              alt="tela de seleção de preferências de alimentos oferecidos pela Omnifood para iPhone"
+            />
+          </div>
+
+          <!-- PASSO N2 -->
+          <div class="caixa-img-reserva">
+            <img
+              src="img/app/tela-do-app-2.png"
+              class="reserva-img"
+              alt="tela de seleção de aprovação da refeição escolhida pelo cliente da Omnifood para iPhone"
+            />
+          </div>
+          <div class="caixa-de-texto-reserva">
+            <p class="passo-numero">02</p>
+            <h3 class="cabecalho-terciario">
+              Aprove seu plano alimentar semanal
+            </h3>
+            <p class="descricao-reserva">
+              Uma vez por semana, aprove o plano alimentar gerado para você pela
+              IA da Omnifood. Você pode alterar ingredientes, trocar refeições
+              inteiras ou até adicionar suas próprias receitas.
+            </p>
+          </div>
+
+          <!-- PASSO N3 -->
+          <div class="caixa-de-texto-reserva">
+            <p class="passo-numero">03</p>
+            <h3 class="cabecalho-terciario">
+              Receba as refeições no horário ideal
+            </h3>
+            <p class="descricao-reserva">
+              Os melhores chefs da cidade cozinharão sua refeição escolhida
+              todos os dias, e nós a entregaremos na sua porta no melhor horário
+              para você. É possível alterar o horário e o endereço de entrega
+              diariamente!
+            </p>
+          </div>
+          <div class="caixa-img-reserva">
+            <img
+              src="img/app/tela-do-app-3.png"
+              class="reserva-img"
+              alt="tela da entregua da refeição da Omnifood para iPhone"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="secao-refeicao" id="refeicao">
+        <div class="container text-align">
+          <span class="subtitulo">Refeições</span>
+          <h2 class="cabecalho-secundario">
+            A IA da Omnifood escolhe entre mais de 5.000 receitas
+          </h2>
+        </div>
+        <div class="container grid grid--3-colunas margin-bottom-medio">
+          <div class="refeicao">
+            <img
+              src="img/refeicoes/refeicao-1.jpg"
+              alt="Guioza Japonês"
+              class="refeicao-img"
+            />
+            <div class="refeicao-conteudo">
+              <div class="refeicao-tags">
+                <span class="tag tag--vegetariano">Vegetariano</span>
+              </div>
+              <p class="refeicao-titulo">Guioza Japonês</p>
+              <ul class="refeicao-atributos">
+                <li class="refeicao-atributo">
+                  <ion-icon
+                    class="refeicao-icone"
+                    name="flame-outline"
+                  ></ion-icon>
+                  <span><strong>650</strong> calorias</span>
+                </li>
+                <li class="refeicao-atributo">
+                  <ion-icon
+                    class="refeicao-icone"
+                    name="restaurant-outline"
+                  ></ion-icon
+                  ><span>Valor Nutricional &reg; <strong>74</strong></span>
+                </li>
+                <li class="refeicao-atributo">
+                  <ion-icon
+                    class="refeicao-icone"
+                    name="star-outline"
+                  ></ion-icon>
+                  <span>Classificação <strong>4.9</strong> (537)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="refeicao">
+            <img
+              src="img/refeicoes/refeicao-2.jpg"
+              alt="Salada de Abacate"
+              class="refeicao-img"
+            />
+            <div class="refeicao-conteudo">
+              <div class="refeicao-tags">
+                <span class="tag tag--vegano">Vegano</span>
+                <span class="tag tag--paleo">Paleo</span>
+              </div>
+              <p class="refeicao-titulo">Salada de Abacate</p>
+              <ul class="refeicao-atributos">
+                <li class="refeicao-atributo">
+                  <ion-icon
+                    class="refeicao-icone"
+                    name="flame-outline"
+                  ></ion-icon>
+                  <span><strong>400</strong> calorias</span>
+                </li>
+                <li class="refeicao-atributo">
+                  <ion-icon
+                    class="refeicao-icone"
+                    name="restaurant-outline"
+                  ></ion-icon
+                  ><span>Valor Nutricional &reg; <strong>92</strong></span>
+                </li>
+                <li class="refeicao-atributo">
+                  <ion-icon
+                    class="refeicao-icone"
+                    name="star-outline"
+                  ></ion-icon>
+                  <span>Classificação <strong>4.8</strong> (441)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dietas">
+            <h3 class="cabecalho-terciario">Funciona com qualquer dieta:</h3>
+            <ul class="lista">
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Vegetariana</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Vegana</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Pescetariana</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Sem Glúten</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Sem Lactose</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Keto</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Paleo</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Baixo FODMAP</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Para Crianças</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container todas-receitas">
+          <a href="#" class="link">Veja todas as receitas &rarr;</a>
+        </div>
+      </section>
+
+      <section class="secao-depoimentos">
+        <div class="depoimento-recipiente">
+          <span class="subtitulo">Depoimentos</span>
+          <h2 class="cabecalho-secundario">
+            Quando você experimenta, não tem volta!
+          </h2>
+
+          <div class="depoimentos grid grid--2-colunas">
+            <figure class="depoimento">
+              <img
+                class="depoimento-img"
+                src="img/clientes/rafael.jpg"
+                alt="foto do cliente Rafael Menezes"
+              />
+              <blockquote class="depoimento-texto">
+                Refeições baratas, saudáveis e deliciosas, sem nem precisar
+                pedir manualmente! Parece mágica de verdade.
+              </blockquote>
+              <p class="depoimento-nome">&mdash; Rafael Menezes</p>
+            </figure>
+
+            <figure class="depoimento" id="depoimentos">
+              <img
+                class="depoimento-img"
+                src="img/clientes/bruno.jpg"
+                alt="foto do cliente Bruno Teixeira"
+              />
+              <blockquote class="depoimento-texto">
+                O algoritmo de IA é incrivelmente bom, escolhe as refeições
+                certas para mim todas as vezes. É incrível não precisar mais se
+                preocupar com comida!
+              </blockquote>
+              <p class="depoimento-nome">&mdash; Bruno Teixeira</p>
+            </figure>
+
+            <figure class="depoimento">
+              <img
+                class="depoimento-img"
+                src="img/clientes/diego.jpg"
+                alt="foto do cliente Diego Almeida"
+              />
+              <blockquote class="depoimento-texto">
+                A Omnifood salvou minha vida! Acabei de abrir uma empresa, então
+                não tenho tempo para cozinhar. Agora não vivo sem minhas
+                refeições diárias!
+              </blockquote>
+              <p class="depoimento-nome">&mdash; Diego Almeida</p>
+            </figure>
+
+            <figure class="depoimento">
+              <img
+                class="depoimento-img"
+                src="img/clientes/camila.jpg"
+                alt="foto da cliente Camila Rocha"
+              />
+              <blockquote class="depoimento-texto">
+                Assinei a Omnifood para a família inteira e isso liberou muito
+                tempo! Além disso, tudo é orgânico, vegano e sem plástico.
+              </blockquote>
+              <p class="depoimento-nome">&mdash; Camila Rocha</p>
+            </figure>
+          </div>
+        </div>
+
+        <div class="galeria">
+          <figure class="item-da-galeria">
+            <img
+              src="img/galeria/galeria-1.jpg"
+              alt="Foto muito bonita de um de nossos pratos"
+            />
+          </figure>
+
+          <figure class="item-da-galeria">
+            <img
+              src="img/galeria/galeria-2.jpg"
+              alt="Foto muito bonita de um de nossos pratos"
+            />
+          </figure>
+
+          <figure class="item-da-galeria">
+            <img
+              src="img/galeria/galeria-3.jpg"
+              alt="Foto muito bonita de um de nossos pratos"
+            />
+          </figure>
+
+          <figure class="item-da-galeria">
+            <img
+              src="img/galeria/galeria-4.jpg"
+              alt="Foto muito bonita de um de nossos pratos"
+            />
+          </figure>
+
+          <figure class="item-da-galeria">
+            <img
+              src="img/galeria/galeria-5.jpg"
+              alt="Foto da nossa cozinheira Jéssica"
+            />
+          </figure>
+
+          <figure class="item-da-galeria">
+            <img
+              src="img/galeria/galeria-6.jpg"
+              alt="Foto muito bonita de um de nossos pratos"
+            />
+          </figure>
+
+          <figure class="item-da-galeria">
+            <img
+              src="img/galeria/galeria-7.jpg"
+              alt="Foto muito bonita de um de nossos pratos"
+            />
+          </figure>
+
+          <figure class="item-da-galeria">
+            <img
+              src="img/galeria/galeria-8.jpg"
+              alt="Foto muito bonita de um de nossos pratos"
+            />
+          </figure>
+
+          <figure class="item-da-galeria">
+            <img
+              src="img/galeria/galeria-9.jpg"
+              alt="Foto muito bonita de um de nossos pratos"
+            />
+          </figure>
+
+          <figure class="item-da-galeria">
+            <img
+              src="img/galeria/galeria-10.jpg"
+              alt="Foto do Chef Nicolas preparando um prato"
+            />
+          </figure>
+
+          <figure class="item-da-galeria">
+            <img
+              src="img/galeria/galeria-11.jpg"
+              alt="Foto muito bonita de um de nossos pratos"
+            />
+          </figure>
+
+          <figure class="item-da-galeria">
+            <img
+              src="img/galeria/galeria-12.jpg"
+              alt="Foto muito bonita de um de nossos pratos"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="secao-do-preco" id="precos">
+        <div class="container">
+          <span class="subtitulo">Preços</span>
+          <h2 class="cabecalho-secundario">Coma bem sem quebrar a banca!</h2>
+        </div>
+
+        <div class="container grid grid--2-colunas margin-bottom-medio">
+          <div class="planos-precos planos-precos--iniciante">
+            <header class="plano-header">
+              <p class="plano-nome">Iniciante</p>
+              <p class="plano-preco"><span>R$</span>660</p>
+              <p class="plano-texto">
+                por mês, isso é apenas R$22 por refeição!
+              </p>
+            </header>
+            <ul class="lista word-spacing">
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>1 refeição por dia</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Peça entre 11h e 21h</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Entrega gratuita</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon class="icone-lista" name="close-outline"></ion-icon>
+              </li>
+            </ul>
+            <div class="plano-assinatura">
+              <a href="#" class="bto bto--cheio">Comece a comer bem</a>
+            </div>
+          </div>
+
+          <div class="planos-precos planos-precos--premium">
+            <header class="plano-header">
+              <p class="plano-nome">Avançado</p>
+              <p class="plano-preco"><span>R$</span>1020</p>
+              <p class="plano-texto">
+                por mês, isso é apenas R$17 por refeição!
+              </p>
+            </header>
+
+            <ul class="lista word-spacing">
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span><strong>2 refeições </strong>por dia</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Pedidos <strong>24/7</strong> </span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Entrega gratuita</span>
+              </li>
+              <li class="lista-item">
+                <ion-icon
+                  class="icone-lista"
+                  name="checkmark-outline"
+                ></ion-icon
+                ><span>Receitas mais recentes</span>
+              </li>
+            </ul>
+            <div class="plano-assinatura">
+              <a href="#" class="bto bto--cheio">Comece a comer bem</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container grid">
+          <aside class="detalhes-do-plano">
+            Os preços incluem todos os impostos aplicáveis. Você pode cancelar a
+            qualquer momento. Ambos os planos incluem os seguintes beneficios:
+          </aside>
+        </div>
+
+        <div class="container grid grid--4-colunas">
+          <div class="qualidades">
+            <ion-icon
+              class="qualidade-icone"
+              name="infinite-outline"
+            ></ion-icon>
+            <div class="qualidade-titulo">Nunca cozinhe novamente!</div>
+            <div class="qualidade-texto">
+              Nossas assinaturas cobrem os 365 dias do ano, incluindo até
+              feriados importantes.
+            </div>
+          </div>
+          <div class="qualidades">
+            <ion-icon
+              class="qualidade-icone"
+              name="nutrition-outline"
+            ></ion-icon>
+            <div class="qualidade-titulo">Local e orgânico</div>
+            <div class="qualidade-texto">
+              Nossos cozinheiros usam apenas produtos locais, frescos e
+              orgânicos para preparar suas refeições.
+            </div>
+          </div>
+          <div class="qualidades">
+            <ion-icon class="qualidade-icone" name="leaf-outline"></ion-icon>
+            <div class="qualidade-titulo">Sem desperdício</div>
+            <div class="qualidade-texto">
+              Todos os nossos parceiros usam apenas embalagens reutilizáveis
+              para empacotar suas refeições.
+            </div>
+          </div>
+          <div class="qualidades">
+            <ion-icon class="qualidade-icone" name="pause-outline"></ion-icon>
+            <div class="qualidade-titulo">Pause a qualquer momento</div>
+            <div class="qualidade-texto">
+              Vai sair de férias? Basta pausar sua assinatura e reembolsamos os
+              dias não utilizados.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-caixa-de-texto">
+              <h2 class="cabecalho-secundario">
+                Receba sua primeira refeição de graça!
+              </h2>
+              <p class="cta-texto">
+                Refeições saudáveis, saborosas e sem complicação estão esperando
+                por você. Comece a se alimentar bem hoje. Você pode cancelar ou
+                pausar a qualquer momento. E a primeira refeição é por nossa
+                conta!
+              </p>
+
+              <form class="cta-formatacao" action="#">
+                <div>
+                  <label for="nome-completo">Nome Completo</label>
+                  <input
+                    id="nome-completo"
+                    type="text"
+                    placeholder="Seu nome"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="Seu email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="onde-nos-viu">De onde você nos conheceu?</label>
+                  <select id="onde-nos-viu" required>
+                    <option value="">Por favor, escolha uma opção</option>
+                    <option value="amigos">Amigos e Família</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="facebook">Anúncio no Facebook</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+
+                <button class="bto bto--formulario">Assine agora</button>
+              </form>
+            </div>
+            <div
+              class="cta-caixa-de-img"
+              role="img"
+              aria-label="mulher comendo"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-coluna">
+          <a class="logo--footer" href="#">
+            <img
+              class="logo-footer"
+              alt="Omnifood Logo"
+              src="img/omnifood-logo.png"
+          /></a>
+
+          <ul class="links-sociais">
+            <li>
+              <a class="footer-link padding-focus" href="#"
+                ><ion-icon class="footer-logo" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link padding-focus" href="#"
+                ><ion-icon class="footer-logo" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link padding-focus" href="#"
+                ><ion-icon class="footer-logo" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy; <span class="ano"></span> pela Omnifood LTDA. Todos
+            direitos reservados
+          </p>
+        </div>
+        <div class="endereco-coluna">
+          <p class="footer-header">Nosso contato</p>
+          <address class="contatos">
+            <p class="endereco">
+              Rua Dr. Renato Paes de Barros, 1200, Itaim Bibi, São Paulo, SP,
+              04530-001
+            </p>
+            <p>
+              <a
+                class="footer-link alinhador focus--zap"
+                href="tel:(11) 98765-4321"
+                ><ion-icon class="footer-logo" name="logo-whatsapp"></ion-icon
+                ><span>&nbsp; (11)&nbsp;</span> <span>98765-4321</span></a
+              ><br />
+              <a class="footer-link" href="mailto:contato-omnifood@gmail.com">
+                contato-omnifood@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-coluna">
+          <p class="footer-header">Conta</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Criar Conta</a></li>
+            <li><a class="footer-link" href="#">Já tenho uma conta</a></li>
+            <li><a class="footer-link" href="#">IOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-coluna">
+          <p class="footer-header">Companhia</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Sobre a Omnifood</a></li>
+            <li><a class="footer-link" href="#">Para negócios</a></li>
+            <li><a class="footer-link" href="#">Parcerias</a></li>
+            <li><a class="footer-link" href="#">Carreira</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-coluna">
+          <p class="footer-header">Recursos</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Diretório de receitas</a></li>
+            <li><a class="footer-link" href="#">Central de ajuda</a></li>
+            <li><a class="footer-link" href="#">Privacidade e termos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
