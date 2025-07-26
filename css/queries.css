@@ -290,8 +290,8 @@
     font-size: 2rem;
   }
 
-  .cabecalho-terciario {
-    font-size: 1.8rem;
+  .font-size {
+    font-size: 2rem !important;
   }
 
   .secao-hero {
